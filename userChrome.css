@@ -1,0 +1,16 @@
+/* Custom font */
+* {
+    font-family: "Tiempos Text" !important;
+    line-height: 1 !important;
+}
+
+/* Hides the container info in url-bar */
+#urlbar #userContext-label {
+    display: none !important;
+  }
+  #urlbar #userContext-indicator {
+    display: none !important;
+  }
+  #urlbar #userContext-icons {
+    display: none !important;
+  }
