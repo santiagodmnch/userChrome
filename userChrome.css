@@ -1,16 +1,18 @@
 /* Custom font */
 * {
-    font-family: "Tiempos Text" !important;
-    line-height: 1 !important;
+  font-family: "Tiempos Text" !important;
 }
 
-/* Hides the container info in url-bar */
-#urlbar #userContext-label {
-    display: none !important;
+/* Apply custom line-height on Windows */
+@media (-moz-platform: windows) {
+  * {
+    line-height: 1 !important;
   }
-  #urlbar #userContext-indicator {
-    display: none !important;
-  }
-  #urlbar #userContext-icons {
-    display: none !important;
-  }
+}
+
+/* Hide container info in url-bar */
+#urlbar #userContext-label,
+#urlbar #userContext-indicator,
+#urlbar #userContext-icons {
+  display: none !important;
+}
